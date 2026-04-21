@@ -5,6 +5,7 @@ permalink: /kinkred/privacy/
 ---
 
 **Effective date:** 2026-04-18
+
 **Applies to:** the Kinkred Android application ("the App") published by
 Universe Devel team ("we", "us").
 
