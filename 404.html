@@ -1,0 +1,46 @@
+---
+layout: null
+permalink: /404.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Page not found</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 560px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+    line-height: 1.55;
+  }
+  h1 { font-size: 1.4rem; margin-top: 2rem; }
+  p { margin: 1rem 0; }
+  .hint { opacity: 0.7; font-size: 0.9rem; }
+  code { font-size: 0.9em; }
+  [hidden] { display: none; }
+</style>
+</head>
+<body>
+<section id="kinkred" hidden>
+  <h1>Kinkred invite</h1>
+  <p>This link is meant to open in the Kinkred app on an Android phone.</p>
+  <p>If Kinkred is installed on the device you tapped this link from, the app should have caught the link before your browser did. Seeing this page instead means Kinkred is not installed here &mdash; open the link on an Android phone that has Kinkred installed, or ask the sender to re-share it on that device.</p>
+  <p class="hint">Nothing from this link reached a server. The invite data lives only after the <code>#</code> in the URL, which browsers never transmit &mdash; it is decoded locally by the app.</p>
+</section>
+<section id="generic">
+  <h1>Page not found</h1>
+  <p>The page you&rsquo;re looking for doesn&rsquo;t exist.</p>
+</section>
+<script>
+  if (window.location.pathname.indexOf('/kinkred/i/') === 0) {
+    document.getElementById('kinkred').hidden = false;
+    document.getElementById('generic').hidden = true;
+  }
+</script>
+</body>
+</html>
