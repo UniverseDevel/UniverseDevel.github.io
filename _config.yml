@@ -2,3 +2,8 @@ title: Universe Devel team
 description: Independent software team.
 theme: minima
 markdown: kramdown
+
+# Jekyll excludes dot-prefixed paths by default; `.well-known/assetlinks.json`
+# must be published verbatim at the site root for Android App Links verification.
+include:
+  - .well-known
