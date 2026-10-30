@@ -4,7 +4,7 @@ title: Kinkred — Privacy Policy
 permalink: /kinkred/privacy/
 ---
 
-**Effective date:** 2026-05-17
+**Effective date:** 2026-10-30
 
 **Applies to:** the Kinkred Android application ("the App") published by
 Universe Devel team ("we", "us").
@@ -22,8 +22,12 @@ Universe Devel team ("we", "us").
   SDKs**.
 - Pairing with a partner uses **Google Nearby Connections** — a direct
   peer-to-peer channel between your phone and your partner's phone over
-  Bluetooth and/or Wi-Fi. Your data is exchanged only with that peer
-  after you both visually confirm a matching 4-digit code.
+  Bluetooth and/or Wi-Fi. You confirm a matching 4-digit code once, when
+  you first pair; after that the two phones sync automatically whenever
+  both are nearby with the app open. Nothing is ever sent to a server.
+- If you choose to send us feedback or a bug report, the App only
+  prepares an email; **your own email app sends it**, and only what you
+  choose to include. See "Feedback and bug reports" below.
 
 ## Data we process
 
@@ -52,9 +56,9 @@ All of the following is processed entirely on your device:
 ## Permissions the App requests and why
 
 - **Bluetooth (scan, advertise, connect)** and **Nearby Wi-Fi Devices**:
-  used only by Google Nearby Connections to discover and pair with a
-  partner's phone for profile and activity sharing. No data is
-  transmitted before both users visually confirm a matching auth code.
+  used only by Google Nearby Connections to discover paired partners'
+  phones and sync profile and activity data peer-to-peer. Data is
+  exchanged only with a device you have explicitly paired with.
 - **Location (legacy Android <= 11 only)**: required by the Android
   platform for Bluetooth scanning on older OS versions. Kinkred does
   not use or store your location.
@@ -71,24 +75,63 @@ When you choose an avatar, Kinkred uses Android's photo picker. The
 selected image is resized locally and stored in the App's private
 database; the original photo is not uploaded anywhere.
 
-## Nearby Connections — what is shared and when
+## Nearby Connections — pairing and automatic sync
 
-When you pair with a partner:
+**Pairing (one time).** To link with a partner, both phones advertise
+and discover each other over Google Nearby Connections and display the
+same 4-digit code. You visually verify the codes match and tap "Pair" on
+both phones. Pairing establishes a shared secret the two phones keep — it
+is your explicit, ongoing consent to sync with that partner.
 
-1. Both devices advertise and discover each other over the Google
-   Nearby Connections service.
-2. Before any data is exchanged, both devices display the same 4-digit
-   authentication code. You must visually verify the codes match and
-   tap "Match" on both phones.
-3. Only after both confirm does each side send the current profile's
-   snapshot (display name, avatar bytes, ratings) to the other.
-4. During an activity-planning session, edits to the shared draft are
-   exchanged in real time between the two paired phones. Nothing is
-   persisted on either phone until both users confirm.
+**Automatic sync (after pairing).** Once paired, whenever both phones are
+near each other with Kinkred open, they re-authenticate using that shared
+secret (no code, no tap) and exchange data automatically:
 
-The data exchanged is limited to the current profile snapshot and the
-activity draft. Previous partners, unrelated profiles, and app
-settings are never shared.
+- your profile snapshot — display name, avatar, kink ratings;
+- locked activities you have with that partner, and each side's per-kink
+  ratings of them.
+
+Sync runs only while the app is open in the foreground — there is no
+background service. It remains **strictly peer-to-peer**: data goes only
+between the two paired phones, never to a server. You can pause auto-sync
+for any partner, or unlink them entirely, at any time. Previous partners,
+unrelated data, and app settings are never shared.
+
+## Feedback and bug reports
+
+If you choose to send feedback or report a bug (the small feedback
+button shown on the App's screens, or Settings → Help → Send feedback or
+report a bug), Kinkred prepares a message and opens **your own email
+app**. The App sends nothing itself, and nothing is sent until you press
+Send in your email app. You can read, edit, or remove anything before
+sending.
+
+Besides your description, you can choose to include the following. Every
+option starts switched off; nothing extra is added unless you tick it.
+
+- **Device info:** app version, Android version, device manufacturer and
+  model, and language.
+- **Anonymized app details:** counts and settings only (for example the
+  number of rated kinks or partners, or whether background sync is on).
+  Names, notes, photos, individual ratings, and identifiers are never
+  included.
+- **Screenshots:** when you tap the feedback button, Kinkred captures the
+  App screen you were on (only Kinkred's own content, nothing else on
+  your phone) and shows it to you; it's attached only if you tick it. You
+  can also add screenshots from your gallery. Tap any screenshot to cover
+  names or anything private with black bars; covered areas are removed
+  from the image itself, not just hidden. Screenshots are resized and
+  re-encoded on your device, which removes metadata such as location, but
+  they can't be anonymized automatically: they show whatever was on
+  screen, so please check them before sending.
+
+We receive your message like any email, so it includes your email
+address. We use it only to look into your report and reply to you, and
+we don't combine it with any other data, because we don't have any. If
+you prefer, you can send from a separate or throwaway email address; that
+doesn't affect how we handle your report. Your email provider handles the
+message under its own privacy policy. We delete reports once they're
+resolved, or sooner on request at universedevel.help@outlook.com.
 
 ## Backup and restore
 
