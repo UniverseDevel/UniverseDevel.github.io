@@ -4,7 +4,7 @@ title: Kinkred — Privacy Policy
 permalink: /kinkred/privacy/
 ---
 
-**Effective date:** 2026-10-30
+**Effective date:** 2026-10-31
 
 **Applies to:** the Kinkred Android application ("the App") published by
 Universe Devel team ("we", "us").
@@ -40,9 +40,10 @@ All of the following is processed entirely on your device:
   preference ratings.
 - **Activities** you plan and complete: date, partner (if any), notes,
   per-kink ratings, and overall ratings.
-- **App security data**: a PBKDF2 hash of your PIN and a random salt,
-  plus a boolean preference indicating whether biometric unlock is
-  enabled.
+- **App security data**: if you set a PIN (it is optional), a PBKDF2
+  hash of it and a random salt, plus a boolean preference indicating
+  whether biometric unlock is enabled. A boolean preference also records
+  whether you have answered the optional "set up a PIN?" prompt.
 
 ## Data we do not process
 
@@ -163,13 +164,17 @@ no shop links at all.
 
 ## Security
 
-- Your PIN is stored as a **PBKDF2-HMAC-SHA256** hash with a
-  per-profile random salt and 120,000 iterations.
+- A PIN lock is optional. You can set one up, change it, or remove it
+  at any time in Settings → Security. Without a PIN, the App opens
+  without a lock screen.
+- If you set a PIN, it is stored as a **PBKDF2-HMAC-SHA256** hash with a
+  per-profile random salt and 120,000 iterations; removing the PIN
+  deletes the hash and salt.
 - Biometric unlock is a convenience alternative to entering the PIN;
   the PIN remains available at all times.
-- The App locks automatically after a configurable interval of
-  inactivity (default: 5 minutes), and can be locked manually from the
-  Profiles screen.
+- While a PIN is set, the App locks automatically after a configurable
+  interval of inactivity (default: 5 minutes), and can be locked
+  manually from the home screen.
 - Data is persisted in the App's private storage sandbox, which is not
   readable by other apps on a non-rooted device.
 
