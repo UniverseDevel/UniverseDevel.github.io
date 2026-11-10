@@ -4,7 +4,7 @@ title: Kinkred — Terms of Use
 permalink: /kinkred/terms/
 ---
 
-**Effective date:** 2026-04-18
+**Effective date:** 2026-11-10
 
 These Terms of Use ("Terms") govern your use of the Kinkred Android
 application ("the App"), published by Universe Devel team ("we", "us").
@@ -45,14 +45,23 @@ Data you create in the App (profiles, ratings, notes, activities,
 photos) remains yours. The App stores it locally on your device. You
 are responsible for managing, backing up, and deleting your own data.
 
-## 5. Partner exchange
+## 5. Partner pairing and sync
 
-When you pair with a partner using the App's Nearby Connections
-feature, both of you are choosing to share that profile's data directly
-with the other. You acknowledge that once data has been shared with a
-partner, we cannot compel the partner to delete it. Pair only with
-people you trust, and verify the 4-digit authentication code before
-confirming.
+When you pair with a partner using the App's Nearby Connections feature,
+you are choosing to share that profile's data directly with the other
+person — and, because pairing enables **automatic sync**, to keep
+sharing it. Once paired, the two phones exchange profile and activity
+data automatically whenever both are nearby — with the App open, or
+in the background while background sync is on — with no further
+confirmation. You can pause this for a partner, unlink them, or turn
+background sync off at any time in the App.
+
+The same applies when you share your ratings or an activity as a QR
+code or link: whoever receives it can read it.
+
+You acknowledge that once data has been shared with a partner, we cannot
+compel the partner to delete it. Verify the 4-digit code when you pair,
+and pair only with people you trust.
 
 ## 6. Intellectual property
 

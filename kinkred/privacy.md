@@ -4,7 +4,7 @@ title: Kinkred — Privacy Policy
 permalink: /kinkred/privacy/
 ---
 
-**Effective date:** 2026-10-31
+**Effective date:** 2026-11-10
 
 **Applies to:** the Kinkred Android application ("the App") published by
 Universe Devel team ("we", "us").
@@ -24,7 +24,8 @@ Universe Devel team ("we", "us").
   peer-to-peer channel between your phone and your partner's phone over
   Bluetooth and/or Wi-Fi. You confirm a matching 4-digit code once, when
   you first pair; after that the two phones sync automatically whenever
-  both are nearby with the app open. Nothing is ever sent to a server.
+  they are near each other (see "Nearby Connections" below). Nothing is
+  ever sent to a server.
 - If you choose to send us feedback or a bug report, the App only
   prepares an email; **your own email app sends it**, and only what you
   choose to include. See "Feedback and bug reports" below.
@@ -35,9 +36,10 @@ All of the following is processed entirely on your device:
 
 - **Profile information** you create: display name, avatar image (if
   provided), and kink preference ratings.
-- **Partner information** you receive from a peer via Nearby
-  Connections: their display name, avatar (if shared), and kink
-  preference ratings.
+- **Partner information** you receive from a partner, via Nearby
+  Connections or a QR code or link they send you: their avatar (if
+  shared) and kink preference ratings. The name you give a partner is
+  your own label.
 - **Activities** you plan and complete: date, partner (if any), notes,
   per-kink ratings, and overall ratings.
 - **App security data**: if you set a PIN (it is optional), a PBKDF2
@@ -64,8 +66,13 @@ All of the following is processed entirely on your device:
   platform for Bluetooth scanning on older OS versions. Kinkred does
   not use or store your location.
 - **Post notifications (Android 13+)**: used to show reminders for
-  activities you have planned. You can decline this permission at any
-  time.
+  activities you have planned and, if you have said you are into
+  sharing media, an occasional discreet evening reminder that you can
+  turn off with one tap. You can decline this permission at any time.
+- **Camera**: used only while the QR-code scanner is open, to read a
+  partner's QR code. No photos or video are taken or stored.
+- **Run at startup**: used only to restart the optional background sync
+  schedule after your phone reboots. It reads no data.
 - **Internet**: used only to download the public affiliate shop
   catalogue described under "Affiliate links and the shop catalogue".
   No personal data is sent.
@@ -89,20 +96,42 @@ near each other with Kinkred open, they re-authenticate using that shared
 secret (no code, no tap) and exchange data automatically:
 
 - your profile snapshot — display name, avatar, kink ratings;
-- locked activities you have with that partner, and each side's per-kink
-  ratings of them.
+- locked activities you have with that partner, each side's per-kink
+  ratings of them, and only the notes you have chosen to share with that
+  partner.
 
-Sync runs only while the app is open in the foreground — there is no
-background service. It remains **strictly peer-to-peer**: data goes only
-between the two paired phones, never to a server. You can pause auto-sync
-for any partner, or unlink them entirely, at any time. Previous partners,
-unrelated data, and app settings are never shared.
+**Background sync (optional).** Background sync is on by default and can
+be turned off in Settings → Sync. While it is on, Kinkred briefly looks
+for paired partners nearby every quarter of an hour, but only while your
+phone's screen is on, only over Bluetooth, and only if Bluetooth is
+already on — it never switches a radio on for you. Two locked phones
+never sync.
+
+Sync is **strictly peer-to-peer**: data goes only between the two paired
+phones, never to a server. You can pause auto-sync for any partner, or
+unlink them entirely, at any time. Previous partners, unrelated data, and
+app settings are never shared.
+
+## Sharing by QR code or link
+
+Instead of pairing, you can share your ratings (or an activity) with a
+partner as a QR code, or as a link that you send yourself through any app
+you choose. The data is packed into the QR code or link itself; Kinkred
+does not upload it anywhere. Anyone who gets the link or sees the QR code
+can read what it contains, so share it only with the person it is meant
+for.
+
+Links point to our website so that Android opens them in Kinkred. If a
+link is opened in a web browser instead (for example on a phone without
+Kinkred), the browser requests that page from our website host, GitHub
+Pages, like any web visit, and the page only explains how to open the
+link in the app. We run no analytics on our website and do not see or
+store these requests ourselves.
 
 ## Feedback and bug reports
 
-If you choose to send feedback or report a bug (the small feedback
-button shown on the App's screens, or Settings → Help → Send feedback or
-report a bug), Kinkred prepares a message and opens **your own email
+If you choose to send feedback or report a bug (Settings → Help → Send
+feedback or report a bug), Kinkred prepares a message and opens **your own email
 app**. The App sends nothing itself, and nothing is sent until you press
 Send in your email app. You can read, edit, or remove anything before
 sending.
@@ -116,10 +145,11 @@ option starts switched off; nothing extra is added unless you tick it.
   number of rated kinks or partners, or whether background sync is on).
   Names, notes, photos, individual ratings, and identifiers are never
   included.
-- **Screenshots:** when you tap the feedback button, Kinkred captures the
-  App screen you were on (only Kinkred's own content, nothing else on
-  your phone) and shows it to you; it's attached only if you tick it. You
-  can also add screenshots from your gallery. Tap any screenshot to cover
+- **Screenshots:** you can add screenshots from your gallery. (Test
+  versions of the App also have a feedback button on every screen; tapping
+  it captures the App screen you were on — only Kinkred's own content,
+  nothing else on your phone — and shows it to you; it's attached only if
+  you tick it.) Tap any screenshot to cover
   names or anything private with black bars; covered areas are removed
   from the image itself, not just hidden. Screenshots are resized and
   re-encoded on your device, which removes metadata such as location, but
